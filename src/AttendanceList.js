@@ -29,6 +29,7 @@ class ListEmployee extends React.Component {
           <Table>
             <Table.Header>
               <Table.ColHeader>Employee ID</Table.ColHeader>
+               <Table.ColHeader>Name</Table.ColHeader>
               <Table.ColHeader>Status</Table.ColHeader>
               <Table.ColHeader>Date</Table.ColHeader>
             </Table.Header>
@@ -36,6 +37,7 @@ class ListEmployee extends React.Component {
               {this.state.data.map((item, i) => (
                 <Table.Row key={i}>
                   <Table.Col>{item.id}</Table.Col>
+                  <Table.Col>{item.name}</Table.Col>
                   <Table.Col>{item.status}</Table.Col>
                   <Table.Col>{item.date}</Table.Col>
                 </Table.Row>
